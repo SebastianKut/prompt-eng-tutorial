@@ -23,6 +23,4 @@ response = client.chat.completions.create(
         {"role": "user", "content": instructions}
     ]
 )
-print(vars(response))
-print("---------------------------------------------------")
 print(response.choices[0].message.content)
